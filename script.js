@@ -140,17 +140,20 @@ class DOMManipulator {
 
     _handleAdd() {
         this._service.addTodo()
+        this.sortDirection=true
         this._displayTodos()
 
     }
 
     _handleEdit(id, title) {
         this._service.editTodo(id, title)
+        this.sortDirection=true
         this._displayTodos()
     }
 
     _handleDelete(id) {
         this._service.deleteTodo(id)
+        this.sortDirection=true
         this._displayTodos()
     }
 
