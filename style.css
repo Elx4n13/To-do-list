@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.to-do-list {
+  margin: auto;
+  width: 33%;
+  text-align: center;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.to-do-list .to-do-list-inner {
+  width: 90%;
+  margin: auto;
+}
+
+.to-do-list .to-do-list-inner .items {
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.to-do-list .to-do-list-inner h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.to-do-list .to-do-list-inner .to-do-sort {
+  margin-left: auto;
+  width: 25px;
+  padding-bottom: 11px;
+  margin-right: 2%;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.to-do-list .to-do-list-inner .to-do-sort:hover {
+  opacity: 0.5;
+}
+
+.to-do-list .to-do-list-inner .to-do-sort img {
+  width: 100%;
+}
+
+.to-do-list .to-do-list-inner .item {
+  text-align: start;
+  padding-left: 10%;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  height: 40px;
+}
+
+.to-do-list .to-do-list-inner .item input {
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  border-radius: 10px;
+  width: 70%;
+  border: 0;
+  height: 100%;
+}
+
+.to-do-list .to-do-list-inner .item img {
+  position: absolute;
+  right: 10%;
+  top: 27%;
+}
+
+.to-do-list .to-do-list-inner .to-do-add {
+  margin: 20px;
+}
+
+.to-do-list .to-do-list-inner .to-do-add button {
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  outline: none;
+  border: 0;
+  width: 40%;
+  background: #833AE0;
+  border-radius: 71px;
+  color: white;
+}
+
+.to-do-list .to-do-list-inner .to-do-add button span:first-child {
+  display: inline-block;
+  width: 40px;
+  padding: 16px;
+  border-radius: 71px;
+  background-color: #9953F1;
+}
+
+.to-do-list .to-do-list-inner .to-do-add button span:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  margin: auto;
+}
+
+.to-do-list .to-do-list-inner .to-do-add button:hover {
+  opacity: 0.8;
+}
+
+.to-do-list .yellow {
+  background-color: #FFDC40;
+  height: 28px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+@media (max-width: 1000px) {
+  .to-do-list {
+    width: 47%;
+  }
+}
+
+@media (max-width: 800px) {
+  .to-do-list {
+    width: 53%;
+  }
+}
+
+@media (max-width: 650px) {
+  .to-do-list {
+    width: 63%;
+  }
+}
+
+@media (max-width: 650px) {
+  .to-do-list {
+    width: 79%;
+  }
+}
+
+@media (max-width: 450px) {
+  .to-do-list {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .to-do-list {
+    width: 95%;
+  }
+  .to-do-list .to-do-list-inner .to-do-add button span:last-child {
+    font-size: 12px;
+  }
+  .to-do-list .to-do-list-inner .to-do-add button span:first-child {
+    font-size: 10px;
+    width: 20px;
+  }
+}
